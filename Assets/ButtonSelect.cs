@@ -7,17 +7,11 @@ public class ButtonSelect : MonoBehaviour {
     [SerializeField] Transform workEnvironment;
     public GameObject SelectedPrimitive;
     Vector3 cameraOffset;
-
+	
 	// Use this for initialization
 	void Start () {
-        cameraOffset = Vector3.back * 3;
-
+    	cameraOffset = Vector3.back * 3;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void MoveCameraToSelected(GameObject primitive)
     {
